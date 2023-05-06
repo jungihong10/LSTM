@@ -20,8 +20,9 @@ You can install the libraries using pip:
 
 ```bash
 pip install pandas numpy scikit-learn keras tensorflow
+```
 
-Usage
+## Usage
 Clone this repository to your local machine:
 bash
 Copy code
@@ -36,7 +37,7 @@ Copy code
 python main.py
 This will train the LSTM model and output the test accuracy and loss.
 
-Model Architecture
+## Model Architecture
 The LSTM model consists of the following layers:
 
 An LSTM layer with 50 units and 'return_sequences=True' to enable the following LSTM layer to receive sequences as input.
