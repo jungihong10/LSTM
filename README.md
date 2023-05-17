@@ -2,15 +2,6 @@
 
 This repository contains an LSTM model for classifying the health of plants based on their time series data. The dataset consists of approximately 5,000 files each for healthy and diseased plants. Each file contains time series data with 9 features.
 
-## Model Architecture
-The LSTM model consists of the following layers:
-
-An LSTM layer with 50 units and 'return_sequences=True' to enable the following LSTM layer to receive sequences as input.
-A Dropout layer with a rate of 0.2 to reduce overfitting by randomly setting input units to 0 during training.
-Another LSTM layer with 50 units.
-A Dropout layer with a rate of 0.2 to further reduce overfitting.
-An output Dense layer with a single neuron and a sigmoid activation function for binary classification.
-
 ## 프로젝트 배경 및 목표:
 디지털 변화의 흐름 속에서 농업 분야는 최적화된 작물 생산을 통해 탄소 중립을 실현하는 방향으로 나아가고 있습니다. 그러나, 환경적 제약, 기후 변화, 병충해 발생 등의 예측하기 어려운 변수들로 인해 실제 농업에 이러한 모델들을 적용하는 것은 여전히 어려운 상황입니다. 이런 문제를 해결하기 위해, 본 프로젝트의 주요 목표는 파인애플에 대한 질병 예측 모델을 개발하여 조기 질병 감지를 통한 살균제 사용 감소를 이루는 것입니다. 이를 통해 농업의 환경 부담 감소와 생산성 향상을 도모하고자 하였습니다.
 
